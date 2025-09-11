@@ -32,6 +32,265 @@ body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 50%;
   font-style: normal;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ====== NAVBAR  ========= */
+nav {
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+  max-width: 300px;
+}
+.fa-magnifying-glass {
+  position: absolute;
+  top: 24%;
+  left: 87%;
+  font-size: 12px;
+  color: hsl(0, 0%, 60%);
+}
+
+#search-input {
+  border: 1px solid hsl(0, 0%, 60%);
+  width: 100%;
+  height: 28px;
+  padding-left: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+#search-input::placeholder {
+  color: hsl(0, 0%, 60%);
+}
+.select-container {
+  width: 100%;
+  display: flex;
+}
+
+#checkout-btn {
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+#filter-btn {
+  height: 28px;
+  font-size: 12px;
+  color: hsl(0, 0%, 60%);
+  border: 1px solid hsl(0, 0%, 60%);
+  border-radius: 5px;
+}
+
+.cart-container {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.scrolled {
+  background-color: hsl(0, 0%, 90%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* ====== END OF PRODUCT LIST ======= */
+/* ====== START OF CART MODAL ======= */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(0, 0%, 40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  width: 80%;
+  min-height: 50%;
+  max-height: 80%;
+  max-width: 700px;
+  overflow-y: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 5px;
+}
+
+.modal-content h2 {
+  text-align: center;
+  font-size: 26px;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+
+.modal-content span {
+  position: absolute;
+  top: 2%;
+  left: 93%;
+}
+
+.modal-content span:hover {
+  cursor: pointer;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+div.item-container {
+  position: relative;
+  margin-bottom: 5px;
+}
+div.item-container h3 {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+div.item-container button {
+  position: absolute;
+  top: 0;
+  left: 95%;
+}
+
+#checkout {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 60%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.checkout-message {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: green;
+  color: white;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+#item-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+}
+
+.button-quantity-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+#item-total {
+  font-weight: bold;
+  text-align: center;
+}
+
+#machines,
+#legs-up,
+#third-image,
+#matcha-flowers,
+#matcha-strawberry {
+  width: 200px;
+  height: 150px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to next line */
+  gap: 20px; /* Adds space between images */
+  justify-content: center; /* Centers the images horizontally */
+  padding: 20px;
+}
+
+.image-gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover; /* Ensures images fill the box nicely */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+
+.logo-paragraph-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;         /* shrink to fit content */
+  margin: 0 auto;             /* center the container */
+}
+
+#logo {
+  width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.description {
+  max-width: 800px;           /* match logo width */
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #e6f2e6; /* soft green like your current background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.search-section input,
+.search-section select,
+.search-section button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+ 

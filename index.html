@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- ================================== -->
+    <!--            Shopping List           -->
+    <!-- ================================== -->
+    <h1>Shopping List</h1>
+
+    <!-- Where you enter each item to add it to the list -->
+    <form onsubmit="addItem(event)">
+      <input type="text" id="item" /> x
+      <input type="number" id="quantity" />
+      <button type="submit">Add to List</button>
+    </form>
+
+    <!-- Where the items will end up displaying -->
+    <p id="shopping-list-display"></p>
+    <hr />
+
+    <!-- ================================== -->
+    <!--            Shopping Basket         -->
+    <!-- ================================== -->
+
+    <h1>Shopping Basket</h1>
+    <p>
+      Enter all the products you've put into your shopping basket, separated by
+      commas, to see if you've forgotten anything
+    </p>
+
+    <form onsubmit="addToBasket(event)">
+      <input
+        type="text"
+        id="shopping-basket"
+        placeholder="e.g. tomatoes,eggs,milk"
+      />
+
+      <button type="submit">Put item in basket</button>
+    </form>
+
+    <p id="items-still-to-buy-display"></p>
+  </body>
+</html>
