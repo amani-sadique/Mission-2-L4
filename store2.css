@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -113,10 +113,11 @@ nav {
 }
 
 .productImg {
-  width: 300px;
-  height: auto;
+  width: 300px; 
+  height: auto; 
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 10px; 
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
+

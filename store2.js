@@ -1,5 +1,7 @@
 console.log("connected");
 
+// Declare variables using let or const
+
 const products = [
   {
     id: 1,
@@ -29,11 +31,16 @@ const products = [
 
 let chosenProduct = products[0];
 
+// Use of Functions
+// Use of document.querySelector()
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuItems = document.querySelectorAll(".menuItem");
   const currentProductImg = document.querySelector(".productImg");
   const currentProductTitle = document.querySelector(".productTitle");
   const currentProductPrice = document.querySelector(".productPrice");
+
+//   Use of Events and Loop (addEventListener, forEach)
 
   menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
