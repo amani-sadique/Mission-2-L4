@@ -1,29 +1,50 @@
-/* background color to the top navigation */
-.topnav {
+nav {
   background-color: #e4b4b4;
-  overflow: hidden;
-  text-align: center;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: inline-block;
+  padding: 20px 50px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: white;
+html {
+  scroll-behavior: smooth;
+}
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  cursor: pointer;
+  width: "100";
+  height: "100";
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.searchInput {
+  border: none;
+  background-color: none;
+}
+
+.searchInput::placeholder {
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: #9da993;
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuItem {
+  margin-right: 50px;
+  cursor: pointer;
+  font-weight: 400;
 }
 
 body {
@@ -36,11 +57,11 @@ body {
   font-style: normal;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
+} */
 
 /* ========================================================== ---------------------- Home Page Images ============================================================ */
 
@@ -68,25 +89,18 @@ body {
   border-radius: 8px; /* Optional: adds rounded corners */
 }
 
-
 .logo-paragraph-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: fit-content;         /* shrink to fit content */
-  margin: 0 auto;             /* center the container */
-}
-
-#logo {
-  width: 500px;
-  height: auto;
-  margin-bottom: 20px;
+  width: fit-content; /* shrink to fit content */
+  margin: 0 auto; /* center the container */
 }
 
 .description {
-  max-width: 800px;           /* match logo width */
+  max-width: 800px; /* match logo width */
   font-size: 1.2rem;
   color: #333;
 }
